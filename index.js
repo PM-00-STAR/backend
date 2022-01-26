@@ -1,7 +1,13 @@
-import React from 'react';
+//importing a node module (inbuilt)
+const os = require("os");
+console.log(os.type());
+//creating own module
 
-export default function index() {
-  return <div>
-      hello
-  </div>;
+const nmodule = {
+    name:"pratibha",
+    age:"20",
+    roll:"40"
 }
+
+//module.exports = nmodule
+exports.nmodule=nmodule //does not show the classname
